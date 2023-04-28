@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <ValueLookup id="HUAWEI-ENTITY-EXTENT-MIB-hwEntityPwrState" desiredValue="1" undefinedState="Error">
+    <Lookups>
+      <SingleInt state="OK" value="1">
+        supply
+      </SingleInt>
+      <SingleInt state="Error" value="2">
+        notSupply
+      </SingleInt>
+      <SingleInt state="Error" value="3">
+        sleep
+      </SingleInt>
+      <SingleInt state="Error" value="4">
+        unknown
+      </SingleInt>
+    </Lookups>
+  </ValueLookup>

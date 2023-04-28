@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <ValueLookup id="HUAWEI-ENTITY-EXTENT-MIB-hwEntityFanState" desiredValue="1" undefinedState="Error">
+    <Lookups>
+      <SingleInt state="OK" value="1">
+        normal
+      </SingleInt>
+      <SingleInt state="Error" value="2">
+        abnormal
+      </SingleInt>
+    </Lookups>
+  </ValueLookup>

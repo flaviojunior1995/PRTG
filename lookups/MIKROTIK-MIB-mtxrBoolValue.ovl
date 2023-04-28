@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <ValueLookup id="MIKROTIK-MIB-mtxrBoolValue" desiredValue="0" undefinedState="Error">
+    <Lookups>
+      <SingleInt state="OK" value="0">
+        false
+      </SingleInt>
+      <SingleInt state="Error" value="1">
+        true
+      </SingleInt>
+    </Lookups>
+  </ValueLookup>

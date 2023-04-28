@@ -1,0 +1,20 @@
+﻿<#objectproperty type="nodename" var="nodename">
+<#lang key="html.device.title" default="Device" var="title">
+<h1 class="sitecaption">
+  <i><#lang key="html.device.head2" default="Device"></i>
+  <dummy data-id="<#objectid>" status="menuclass,class" class="<#sensor type="menuclassofstate">">
+  		<#objectproperty name="Name" show="text">
+  </dummy>
+  <div id="objectpriority" title="<#lang key="html.sensorstatusdata.setprio" default="Click to set priority and/or favorite status">">
+    <dummy status="favorite"><#objectstatus  name="favorite"></dummy> <dummy status="priority"><#objectstatus  name="priority"></dummy>
+  </div>
+</h1>
+<div status="menuclass,class,buttonbox " class="buttonbox <#sensor type="menuclassofstate">">
+<!--
+  <dummy status="paused"><#object type="pause"></dummy>
+  <#include file="includes\linkpagebutton.htm">
+-->
+  <a onclick="_Prtg.objectTools.checkObjectNow.call(this,<#objectid>);return false;" class="checknow" style="<#system type='hideforreadonlyusers'> " href="#" data-placement="bottom" title="<#lang key="html.global.CheckNow" default="Scan Now">"><i class="icon-dark glyph-arrows-cw"></i></a>
+  <a data-id="<#objectidorzero>" style="<#system type='hideforreadonlyusers'>" class='hideForID0' href="/addsensor.htm?id=<#objectid>" data-placement="bottom" title="<#lang key="html.device.addsensor" default="Add Sensor">"><i class="icon-dark icon-plus"></i></a>
+  <a data-id="<#objectidorzero>" href="#" status="menuclass,class,menulink systemmenu menuleft nopopup " class="menulink systemmenu menuleft nopopup <#sensor type="menuclassofstate">"><i class="icon-dark icon-triangle-1-s"></i></a>
+</div>

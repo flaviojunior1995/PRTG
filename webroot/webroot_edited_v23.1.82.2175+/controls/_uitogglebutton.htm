@@ -1,0 +1,20 @@
+﻿<div id="toggleuibutton" class="prtg-plugin ui-toggle-button" data-appserverport='<#system type="appserverport">' data-plugin="ToggleUiButton">
+    <a> </a>
+</div>
+
+<script>
+  function buildURL() {
+    var port = '<#system type="appserverport">'
+    return (
+      location.protocol +
+      "//" +
+      location.hostname +
+      ":" +
+      port +
+      location.pathname +
+      location.search
+    );
+  }
+  var actionbutton = document.querySelector('.actionbutton');
+  actionbutton.setAttribute('href', buildURL());
+</script>

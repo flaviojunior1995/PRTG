@@ -1,0 +1,24 @@
+﻿<#lang key="html.sensor.title" default="Sensor Details" var="title">
+
+<h1 status="sensorstatusbig,class,sitecaption sensorheader " class="sitecaption sensorheader <#sensor type="colorclassofstate" prefix="sensorstatusmessage">">
+    <div data-id="<#objectid>" status="sensorstatus,class,bigsensoricon " class="bigsensoricon <#sensor type="colorclassofstate" prefix="bigsensoricon"> <#sensor type="menuclassofstate">"></div>
+    <i><#lang key="html.sensor.head2" default="Sensor"></i>
+  	<dummy data-id="<#objectid>" status="name;menuclass,class" class="<#sensor type="menuclassofstate">"><#objectproperty name="Name" show="text"></dummy>
+  	<div id="objectpriority" title="<#lang key="html.sensorstatusdata.setprio" default="Click to set priority and/or favorite status">">
+      <dummy class="favorite" status="favorite"><#objectstatus  name="favorite"></dummy> <dummy status="priority"><#objectstatus  name="priority"></dummy>
+  	</div>
+
+    <div status="sensorstatusbig,class,textmessage sensorstatusmessage " class="textmessage sensorstatusmessage <#sensor type="colorclassofstate" prefix="sensorstatusmessage">">
+        <strong status="message"><#objectstatus name="message"></strong>
+    </div>
+</h1>
+
+<div status="menuclass,class,buttonbox " class="buttonbox <#sensor type="menuclassofstate">">
+<!--
+  <a onclick="_Prtg.objectTools.acknowledgeError.call(this,<#objectid>);return false;" class="acknow" href="#" data-placement="bottom" style="<#system type="usertype" contentallowack="" contentreadonly="display:none;" contentnotreadonly="">" title="<#langjs key="js.contextmenus.Pause.AcknowledgeIndefinitely" default="Acknowledge Indefinitely">"><i class="icon-dark icon-check"></i></a>
+  <dummy status="paused"><#object type="pause"></dummy>
+  <#include file="includes\linkpagebutton.htm">
+-->
+  <a onclick="_Prtg.objectTools.checkObjectNow.call(this,<#objectid>);return false;" class="checknow" href="#" data-placement="bottom" style="<#system type='hideforreadonlyusers'>" title="<#lang key="html.global.CheckNow" default="Scan Now">"><i class="icon-dark glyph-arrows-cw"></i></a>
+  <a data-id="<#objectidorzero>" href="#"status="menuclass,class,menulink systemmenu menuleft nopopup " class="menulink systemmenu menuleft nopopup <#sensor type="menuclassofstate">"><i class="icon-dark icon-triangle-1-s"></i></a>
+</div>

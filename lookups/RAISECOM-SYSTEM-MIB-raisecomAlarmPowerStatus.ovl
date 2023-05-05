@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <ValueLookup id="RAISECOM-SYSTEM-MIB-raisecomAlarmPowerStatus" desiredValue="1" undefinedState="Error">
+    <Lookups>
+      <SingleInt state="OK" value="1">
+        dual-power-on
+      </SingleInt>
+      <SingleInt state="Error" value="2">
+        dual-power-off
+      </SingleInt>
+      <SingleInt state="Error" value="3">
+        power1-off
+      </SingleInt>
+      <SingleInt state="Error" value="4">
+        power2-off
+      </SingleInt>
+    </Lookups>
+  </ValueLookup>

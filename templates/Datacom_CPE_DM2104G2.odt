@@ -1093,6 +1093,889 @@
       <triggerdata/>
     </create>
 	
+	<create id="eth-1/1" kind="snmptraffic" requires="snmp" displayname="eth1/1">
+      <createdata>
+	    <interfacenumber>1:eth1-1</interfacenumber>
+        <tags>
+          bandwidthsensor snmptrafficsensor
+        </tags>
+        <priority>
+          3
+        </priority>
+        <comments>
+          Ethernet
+        </comments>
+        <primarychannel>
+          -1
+        </primarychannel>
+        <position>
+          1010
+        </position>
+        <inherittriggers>
+          <flags>
+            <inherited/>
+          </flags>
+          <cell>
+            1
+          </cell>
+        </inherittriggers>
+        <stack>
+          0
+        </stack>
+        <usesingleget/>
+        <stack>
+          0
+        </stack>
+        <namein>
+          Traffic In
+        </namein>
+        <nameout>
+          Traffic Out
+        </nameout>
+        <namesum>
+          Traffic Total
+        </namesum>
+        <trafficmode>
+          <cell row="0">
+            errors
+          </cell>
+          <cell row="1">
+            discards
+          </cell>
+        </trafficmode>
+        <monitorstate>
+          2
+        </monitorstate>
+      </createdata>
+	  <channeldata primary="-1" modulo="0" fix="2" sum="0" v="1">
+        <sumchannel sum="1" id="-1">
+          <data>
+            <avgmode>
+              0
+            </avgmode>
+            <axismax>
+              <cell col="1">
+                8E-6
+              </cell>
+            </axismax>
+            <axismin>
+              <cell col="1">
+                8E-6
+              </cell>
+            </axismin>
+            <axismode>
+              0
+            </axismode>
+            <colmode>
+              0
+            </colmode>
+            <decimaldigits>
+              2
+            </decimaldigits>
+            <decimalmode>
+              0
+            </decimalmode>
+            <indexed>
+              1
+            </indexed>
+            <kind>
+              BytesBandwidth
+            </kind>
+            <limitmaxerror>
+              <cell col="1">
+                8E-6
+              </cell>
+            </limitmaxerror>
+            <limitmaxwarning>
+              <cell col="1">
+                8E-6
+              </cell>
+            </limitmaxwarning>
+            <limitminerror>
+              <cell col="1">
+                8E-6
+              </cell>
+            </limitminerror>
+            <limitminwarning>
+              <cell col="1">
+                8E-6
+              </cell>
+            </limitminwarning>
+            <limitmode>
+              0
+            </limitmode>
+            <linewidth>
+              1
+            </linewidth>
+            <mode>
+              Difference
+            </mode>
+            <name>
+              Traffic Total
+            </name>
+            <namereadonly>
+              0
+            </namereadonly>
+            <nostack>
+              0
+            </nostack>
+            <percent>
+              0
+            </percent>
+            <ref100percent>
+              <cell col="0">
+                25000000
+              </cell>
+              <cell col="1">
+                8E-6
+              </cell>
+            </ref100percent>
+            <show>
+              1
+            </show>
+            <showchart>
+              1
+            </showchart>
+            <speedsize>
+              MegaBit
+            </speedsize>
+            <speedtime>
+              Second
+            </speedtime>
+            <spikemax>
+              <cell col="1">
+                8E-6
+              </cell>
+            </spikemax>
+            <spikemin>
+              <cell col="1">
+                8E-6
+              </cell>
+            </spikemin>
+            <spikemode>
+              0
+            </spikemode>
+            <volumesize>
+              MegaByte
+            </volumesize>
+          </data>
+        </sumchannel>
+        <downchannel id="-4">
+          <data>
+            <axismode>
+              0
+            </axismode>
+            <colmode>
+              0
+            </colmode>
+            <decimaldigits>
+              2
+            </decimaldigits>
+            <decimalmode>
+              0
+            </decimalmode>
+            <kind>
+              Percent
+            </kind>
+            <limitmode>
+              0
+            </limitmode>
+            <linewidth>
+              1
+            </linewidth>
+            <mode>
+              Absolute
+            </mode>
+            <name>
+              Downtime
+            </name>
+            <namereadonly>
+              0
+            </namereadonly>
+            <nostack>
+              0
+            </nostack>
+            <percent>
+              0
+            </percent>
+            <show>
+              1
+            </show>
+            <showchart>
+              1
+            </showchart>
+            <speedsize>
+              None
+            </speedsize>
+            <speedtime>
+              None
+            </speedtime>
+            <spikemode>
+              0
+            </spikemode>
+            <volumesize>
+              None
+            </volumesize>
+          </data>
+        </downchannel>
+        <list>
+          <channel sum="1" id="0">
+            <data>
+              <avgmode>
+                0
+              </avgmode>
+              <axismax>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </axismax>
+              <axismin>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </axismin>
+              <axismode>
+                0
+              </axismode>
+              <colmode>
+                0
+              </colmode>
+              <decimaldigits>
+                2
+              </decimaldigits>
+              <decimalmode>
+                0
+              </decimalmode>
+              <indexed>
+                1
+              </indexed>
+              <kind>
+                BytesBandwidth
+              </kind>
+              <limiterrormsg>
+              </limiterrormsg>
+              <limitmaxerror>
+                <cell col="0">
+                </cell>
+              </limitmaxerror>
+              <limitmaxwarning>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </limitmaxwarning>
+              <limitminerror>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </limitminerror>
+              <limitminwarning>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </limitminwarning>
+              <limitmode>
+                0
+              </limitmode>
+              <linewidth>
+                1
+              </linewidth>
+              <mode>
+                Difference
+              </mode>
+              <name>
+                Traffic In
+              </name>
+              <namereadonly>
+                0
+              </namereadonly>
+              <nostack>
+                0
+              </nostack>
+              <percent>
+                0
+              </percent>
+              <ref100percent>
+                <cell col="0">
+                  12500000
+                </cell>
+              </ref100percent>
+              <show>
+                1
+              </show>
+              <showchart>
+                1
+              </showchart>
+              <speedsize>
+                MegaBit
+              </speedsize>
+              <speedtime>
+                Second
+              </speedtime>
+              <spikemax>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </spikemax>
+              <spikemin>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </spikemin>
+              <spikemode>
+                0
+              </spikemode>
+              <volumesize>
+                MegaByte
+              </volumesize>
+            </data>
+          </channel>
+          <channel sum="1" id="1">
+            <data>
+              <avgmode>
+                0
+              </avgmode>
+              <axismax>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </axismax>
+              <axismin>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </axismin>
+              <axismode>
+                0
+              </axismode>
+              <colmode>
+                0
+              </colmode>
+              <decimaldigits>
+                2
+              </decimaldigits>
+              <decimalmode>
+                0
+              </decimalmode>
+              <indexed>
+                1
+              </indexed>
+              <kind>
+                BytesBandwidth
+              </kind>
+              <limiterrormsg>
+              </limiterrormsg>
+              <limitmaxerror>
+                <cell col="0">
+                </cell>
+              </limitmaxerror>
+              <limitmaxwarning>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </limitmaxwarning>
+              <limitminerror>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </limitminerror>
+              <limitminwarning>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </limitminwarning>
+              <limitmode>
+                0
+              </limitmode>
+              <linewidth>
+                1
+              </linewidth>
+              <mode>
+                Difference
+              </mode>
+              <name>
+                Traffic Out
+              </name>
+              <namereadonly>
+                0
+              </namereadonly>
+              <nostack>
+                0
+              </nostack>
+              <percent>
+                0
+              </percent>
+              <ref100percent>
+                <cell col="0">
+                  12500000
+                </cell>
+              </ref100percent>
+              <show>
+                1
+              </show>
+              <showchart>
+                1
+              </showchart>
+              <speedsize>
+                MegaBit
+              </speedsize>
+              <speedtime>
+                Second
+              </speedtime>
+              <spikemax>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </spikemax>
+              <spikemin>
+                <cell col="1">
+                  8E-6
+                </cell>
+              </spikemin>
+              <spikemode>
+                0
+              </spikemode>
+              <volumesize>
+                MegaByte
+              </volumesize>
+            </data>
+          </channel>
+          <channel id="10">
+            <data>
+              <avgmode>
+                0
+              </avgmode>
+              <axismax>
+                <cell col="1">
+                  1
+                </cell>
+              </axismax>
+              <axismin>
+                <cell col="1">
+                  1
+                </cell>
+              </axismin>
+              <axismode>
+                0
+              </axismode>
+              <colmode>
+                0
+              </colmode>
+              <decimaldigits>
+                2
+              </decimaldigits>
+              <decimalmode>
+                0
+              </decimalmode>
+              <kind>
+                Count
+              </kind>
+              <limiterrormsg>
+              </limiterrormsg>
+              <limitmaxerror>
+                <cell col="0">
+                  0
+                </cell>
+              </limitmaxerror>
+              <limitmaxwarning>
+                <cell col="1">
+                  1
+                </cell>
+              </limitmaxwarning>
+              <limitminerror>
+                <cell col="1">
+                  1
+                </cell>
+              </limitminerror>
+              <limitminwarning>
+                <cell col="1">
+                  1
+                </cell>
+              </limitminwarning>
+              <limitmode>
+                1
+              </limitmode>
+              <linewidth>
+                1
+              </linewidth>
+              <mode>
+                Difference
+              </mode>
+              <name>
+                Errors in
+              </name>
+              <namereadonly>
+                0
+              </namereadonly>
+              <nostack>
+                0
+              </nostack>
+              <percent>
+                0
+              </percent>
+              <ref100percent>
+                <cell col="1">
+                  1
+                </cell>
+              </ref100percent>
+              <show>
+                1
+              </show>
+              <showchart>
+                1
+              </showchart>
+              <speedsize>
+                None
+              </speedsize>
+              <speedtime>
+                Second
+              </speedtime>
+              <spikemax>
+                <cell col="1">
+                  1
+                </cell>
+              </spikemax>
+              <spikemin>
+                <cell col="1">
+                  1
+                </cell>
+              </spikemin>
+              <spikemode>
+                0
+              </spikemode>
+              <volumesize>
+                None
+              </volumesize>
+            </data>
+          </channel>
+          <channel id="11">
+            <data>
+              <avgmode>
+                0
+              </avgmode>
+              <axismax>
+                <cell col="1">
+                  1
+                </cell>
+              </axismax>
+              <axismin>
+                <cell col="1">
+                  1
+                </cell>
+              </axismin>
+              <axismode>
+                0
+              </axismode>
+              <colmode>
+                0
+              </colmode>
+              <decimaldigits>
+                2
+              </decimaldigits>
+              <decimalmode>
+                0
+              </decimalmode>
+              <kind>
+                Count
+              </kind>
+              <limiterrormsg>
+              </limiterrormsg>
+              <limitmaxerror>
+                <cell col="0">
+                  0
+                </cell>
+              </limitmaxerror>
+              <limitmaxwarning>
+                <cell col="1">
+                  1
+                </cell>
+              </limitmaxwarning>
+              <limitminerror>
+                <cell col="1">
+                  1
+                </cell>
+              </limitminerror>
+              <limitminwarning>
+                <cell col="1">
+                  1
+                </cell>
+              </limitminwarning>
+              <limitmode>
+                1
+              </limitmode>
+              <linewidth>
+                1
+              </linewidth>
+              <mode>
+                Difference
+              </mode>
+              <name>
+                Errors out
+              </name>
+              <namereadonly>
+                0
+              </namereadonly>
+              <nostack>
+                0
+              </nostack>
+              <percent>
+                0
+              </percent>
+              <ref100percent>
+                <cell col="1">
+                  1
+                </cell>
+              </ref100percent>
+              <show>
+                1
+              </show>
+              <showchart>
+                1
+              </showchart>
+              <speedsize>
+                None
+              </speedsize>
+              <speedtime>
+                Second
+              </speedtime>
+              <spikemax>
+                <cell col="1">
+                  1
+                </cell>
+              </spikemax>
+              <spikemin>
+                <cell col="1">
+                  1
+                </cell>
+              </spikemin>
+              <spikemode>
+                0
+              </spikemode>
+              <volumesize>
+                None
+              </volumesize>
+            </data>
+          </channel>
+          <channel id="12">
+            <data>
+              <avgmode>
+                0
+              </avgmode>
+              <axismax>
+                <cell col="1">
+                  1
+                </cell>
+              </axismax>
+              <axismin>
+                <cell col="1">
+                  1
+                </cell>
+              </axismin>
+              <axismode>
+                0
+              </axismode>
+              <colmode>
+                0
+              </colmode>
+              <decimaldigits>
+                2
+              </decimaldigits>
+              <decimalmode>
+                0
+              </decimalmode>
+              <kind>
+                Count
+              </kind>
+              <limitmaxerror>
+                <cell col="1">
+                  1
+                </cell>
+              </limitmaxerror>
+              <limitmaxwarning>
+                <cell col="0">
+                  0
+                </cell>
+              </limitmaxwarning>
+              <limitminerror>
+                <cell col="1">
+                  1
+                </cell>
+              </limitminerror>
+              <limitminwarning>
+                <cell col="1">
+                  1
+                </cell>
+              </limitminwarning>
+              <limitmode>
+                0
+              </limitmode>
+              <limitwarningmsg>
+              </limitwarningmsg>
+              <linewidth>
+                1
+              </linewidth>
+              <mode>
+                Difference
+              </mode>
+              <name>
+                Discards in
+              </name>
+              <namereadonly>
+                0
+              </namereadonly>
+              <nostack>
+                0
+              </nostack>
+              <percent>
+                0
+              </percent>
+              <ref100percent>
+                <cell col="1">
+                  1
+                </cell>
+              </ref100percent>
+              <show>
+                1
+              </show>
+              <showchart>
+                1
+              </showchart>
+              <speedsize>
+                None
+              </speedsize>
+              <speedtime>
+                Second
+              </speedtime>
+              <spikemax>
+                <cell col="1">
+                  1
+                </cell>
+              </spikemax>
+              <spikemin>
+                <cell col="1">
+                  1
+                </cell>
+              </spikemin>
+              <spikemode>
+                0
+              </spikemode>
+              <volumesize>
+                None
+              </volumesize>
+            </data>
+          </channel>
+          <channel id="13">
+            <data>
+              <avgmode>
+                0
+              </avgmode>
+              <axismax>
+                <cell col="1">
+                  1
+                </cell>
+              </axismax>
+              <axismin>
+                <cell col="1">
+                  1
+                </cell>
+              </axismin>
+              <axismode>
+                0
+              </axismode>
+              <colmode>
+                0
+              </colmode>
+              <decimaldigits>
+                2
+              </decimaldigits>
+              <decimalmode>
+                0
+              </decimalmode>
+              <kind>
+                Count
+              </kind>
+              <limitmaxerror>
+                <cell col="1">
+                  1
+                </cell>
+              </limitmaxerror>
+              <limitmaxwarning>
+                <cell col="0">
+                  0
+                </cell>
+              </limitmaxwarning>
+              <limitminerror>
+                <cell col="1">
+                  1
+                </cell>
+              </limitminerror>
+              <limitminwarning>
+                <cell col="1">
+                  1
+                </cell>
+              </limitminwarning>
+              <limitmode>
+                0
+              </limitmode>
+              <limitwarningmsg>
+                
+              </limitwarningmsg>
+              <linewidth>
+                1
+              </linewidth>
+              <mode>
+                Difference
+              </mode>
+              <name>
+                Discards out
+              </name>
+              <namereadonly>
+                0
+              </namereadonly>
+              <nostack>
+                0
+              </nostack>
+              <percent>
+                0
+              </percent>
+              <ref100percent>
+                <cell col="1">
+                  1
+                </cell>
+              </ref100percent>
+              <show>
+                1
+              </show>
+              <showchart>
+                1
+              </showchart>
+              <speedsize>
+                None
+              </speedsize>
+              <speedtime>
+                Second
+              </speedtime>
+              <spikemax>
+                <cell col="1">
+                  1
+                </cell>
+              </spikemax>
+              <spikemin>
+                <cell col="1">
+                  1
+                </cell>
+              </spikemin>
+              <spikemode>
+                0
+              </spikemode>
+              <volumesize>
+                None
+              </volumesize>
+            </data>
+          </channel>
+        </list>
+      </channeldata>
+    </create>
+	
 	<create id="eth-1/2" kind="snmptraffic" requires="snmp" displayname="eth1/2">
       <createdata>
 	    <interfacenumber>2:eth1-2</interfacenumber>
@@ -1806,7 +2689,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
               </limitwarningmsg>
@@ -1914,7 +2797,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
                 
@@ -2689,7 +3572,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
               </limitwarningmsg>
@@ -2797,7 +3680,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
                 
@@ -3572,7 +4455,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
               </limitwarningmsg>
@@ -3680,7 +4563,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
                 
@@ -4455,7 +5338,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
               </limitwarningmsg>
@@ -4563,7 +5446,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
                 
@@ -5338,7 +6221,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
               </limitwarningmsg>
@@ -6221,7 +7104,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
               </limitwarningmsg>
@@ -6329,7 +7212,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
                 
@@ -7104,7 +7987,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
+                0
               </limitmode>
               <limitwarningmsg>
               </limitwarningmsg>
@@ -7212,1773 +8095,7 @@
                 </cell>
               </limitminwarning>
               <limitmode>
-                1
-              </limitmode>
-              <limitwarningmsg>
-                
-              </limitwarningmsg>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Discards out
-              </name>
-              <namereadonly>
                 0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="1">
-                  1
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                None
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                None
-              </volumesize>
-            </data>
-          </channel>
-        </list>
-      </channeldata>
-    </create>
-	
-	<create id="eth-1/1" kind="snmptraffic" requires="snmp" displayname="eth1/1">
-      <createdata>
-	    <interfacenumber>1:eth1-1</interfacenumber>
-        <tags>
-          bandwidthsensor snmptrafficsensor
-        </tags>
-        <priority>
-          3
-        </priority>
-        <comments>
-          Ethernet
-        </comments>
-        <primarychannel>
-          -1
-        </primarychannel>
-        <position>
-          1010
-        </position>
-        <inherittriggers>
-          <flags>
-            <inherited/>
-          </flags>
-          <cell>
-            1
-          </cell>
-        </inherittriggers>
-        <stack>
-          0
-        </stack>
-        <usesingleget/>
-        <stack>
-          0
-        </stack>
-        <namein>
-          Traffic In
-        </namein>
-        <nameout>
-          Traffic Out
-        </nameout>
-        <namesum>
-          Traffic Total
-        </namesum>
-        <trafficmode>
-          <cell row="0">
-            errors
-          </cell>
-          <cell row="1">
-            discards
-          </cell>
-        </trafficmode>
-        <monitorstate>
-          2
-        </monitorstate>
-      </createdata>
-	  <channeldata primary="-1" modulo="0" fix="2" sum="0" v="1">
-        <sumchannel sum="1" id="-1">
-          <data>
-            <avgmode>
-              0
-            </avgmode>
-            <axismax>
-              <cell col="1">
-                8E-6
-              </cell>
-            </axismax>
-            <axismin>
-              <cell col="1">
-                8E-6
-              </cell>
-            </axismin>
-            <axismode>
-              0
-            </axismode>
-            <colmode>
-              0
-            </colmode>
-            <decimaldigits>
-              2
-            </decimaldigits>
-            <decimalmode>
-              0
-            </decimalmode>
-            <indexed>
-              1
-            </indexed>
-            <kind>
-              BytesBandwidth
-            </kind>
-            <limitmaxerror>
-              <cell col="1">
-                8E-6
-              </cell>
-            </limitmaxerror>
-            <limitmaxwarning>
-              <cell col="1">
-                8E-6
-              </cell>
-            </limitmaxwarning>
-            <limitminerror>
-              <cell col="1">
-                8E-6
-              </cell>
-            </limitminerror>
-            <limitminwarning>
-              <cell col="1">
-                8E-6
-              </cell>
-            </limitminwarning>
-            <limitmode>
-              0
-            </limitmode>
-            <linewidth>
-              1
-            </linewidth>
-            <mode>
-              Difference
-            </mode>
-            <name>
-              Traffic Total
-            </name>
-            <namereadonly>
-              0
-            </namereadonly>
-            <nostack>
-              0
-            </nostack>
-            <percent>
-              0
-            </percent>
-            <ref100percent>
-              <cell col="0">
-                25000000
-              </cell>
-              <cell col="1">
-                8E-6
-              </cell>
-            </ref100percent>
-            <show>
-              1
-            </show>
-            <showchart>
-              1
-            </showchart>
-            <speedsize>
-              MegaBit
-            </speedsize>
-            <speedtime>
-              Second
-            </speedtime>
-            <spikemax>
-              <cell col="1">
-                8E-6
-              </cell>
-            </spikemax>
-            <spikemin>
-              <cell col="1">
-                8E-6
-              </cell>
-            </spikemin>
-            <spikemode>
-              0
-            </spikemode>
-            <volumesize>
-              MegaByte
-            </volumesize>
-          </data>
-        </sumchannel>
-        <downchannel id="-4">
-          <data>
-            <axismode>
-              0
-            </axismode>
-            <colmode>
-              0
-            </colmode>
-            <decimaldigits>
-              2
-            </decimaldigits>
-            <decimalmode>
-              0
-            </decimalmode>
-            <kind>
-              Percent
-            </kind>
-            <limitmode>
-              0
-            </limitmode>
-            <linewidth>
-              1
-            </linewidth>
-            <mode>
-              Absolute
-            </mode>
-            <name>
-              Downtime
-            </name>
-            <namereadonly>
-              0
-            </namereadonly>
-            <nostack>
-              0
-            </nostack>
-            <percent>
-              0
-            </percent>
-            <show>
-              1
-            </show>
-            <showchart>
-              1
-            </showchart>
-            <speedsize>
-              None
-            </speedsize>
-            <speedtime>
-              None
-            </speedtime>
-            <spikemode>
-              0
-            </spikemode>
-            <volumesize>
-              None
-            </volumesize>
-          </data>
-        </downchannel>
-        <list>
-          <channel sum="1" id="0">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <indexed>
-                1
-              </indexed>
-              <kind>
-                BytesBandwidth
-              </kind>
-              <limiterrormsg>
-              </limiterrormsg>
-              <limitmaxerror>
-                <cell col="0">
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                0
-              </limitmode>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Traffic In
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="0">
-                  12500000
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                MegaBit
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                MegaByte
-              </volumesize>
-            </data>
-          </channel>
-          <channel sum="1" id="1">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <indexed>
-                1
-              </indexed>
-              <kind>
-                BytesBandwidth
-              </kind>
-              <limiterrormsg>
-              </limiterrormsg>
-              <limitmaxerror>
-                <cell col="0">
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                0
-              </limitmode>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Traffic Out
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="0">
-                  12500000
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                MegaBit
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                MegaByte
-              </volumesize>
-            </data>
-          </channel>
-          <channel id="10">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  1
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  1
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <kind>
-                Count
-              </kind>
-              <limiterrormsg>
-              </limiterrormsg>
-              <limitmaxerror>
-                <cell col="0">
-                  0
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                1
-              </limitmode>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Errors in
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="1">
-                  1
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                None
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                None
-              </volumesize>
-            </data>
-          </channel>
-          <channel id="11">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  1
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  1
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <kind>
-                Count
-              </kind>
-              <limiterrormsg>
-              </limiterrormsg>
-              <limitmaxerror>
-                <cell col="0">
-                  0
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                1
-              </limitmode>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Errors out
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="1">
-                  1
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                None
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                None
-              </volumesize>
-            </data>
-          </channel>
-          <channel id="12">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  1
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  1
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <kind>
-                Count
-              </kind>
-              <limitmaxerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="0">
-                  0
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                1
-              </limitmode>
-              <limitwarningmsg>
-              </limitwarningmsg>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Discards in
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="1">
-                  1
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                None
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                None
-              </volumesize>
-            </data>
-          </channel>
-          <channel id="13">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  1
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  1
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <kind>
-                Count
-              </kind>
-              <limitmaxerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="0">
-                  0
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                1
-              </limitmode>
-              <limitwarningmsg>
-                
-              </limitwarningmsg>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Discards out
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="1">
-                  1
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                None
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                None
-              </volumesize>
-            </data>
-          </channel>
-        </list>
-      </channeldata>
-    </create>
-	
-	<create id="eth-1/1" kind="snmptraffic" requires="snmp" displayname="eth1/1">
-      <createdata>
-	    <interfacenumber>1:eth1-1</interfacenumber>
-        <tags>
-          bandwidthsensor snmptrafficsensor
-        </tags>
-        <priority>
-          3
-        </priority>
-        <comments>
-          Ethernet
-        </comments>
-        <primarychannel>
-          -1
-        </primarychannel>
-        <position>
-          1010
-        </position>
-        <inherittriggers>
-          <flags>
-            <inherited/>
-          </flags>
-          <cell>
-            1
-          </cell>
-        </inherittriggers>
-        <stack>
-          0
-        </stack>
-        <usesingleget/>
-        <stack>
-          0
-        </stack>
-        <namein>
-          Traffic In
-        </namein>
-        <nameout>
-          Traffic Out
-        </nameout>
-        <namesum>
-          Traffic Total
-        </namesum>
-        <trafficmode>
-          <cell row="0">
-            errors
-          </cell>
-          <cell row="1">
-            discards
-          </cell>
-        </trafficmode>
-        <monitorstate>
-          2
-        </monitorstate>
-      </createdata>
-	  <channeldata primary="-1" modulo="0" fix="2" sum="0" v="1">
-        <sumchannel sum="1" id="-1">
-          <data>
-            <avgmode>
-              0
-            </avgmode>
-            <axismax>
-              <cell col="1">
-                8E-6
-              </cell>
-            </axismax>
-            <axismin>
-              <cell col="1">
-                8E-6
-              </cell>
-            </axismin>
-            <axismode>
-              0
-            </axismode>
-            <colmode>
-              0
-            </colmode>
-            <decimaldigits>
-              2
-            </decimaldigits>
-            <decimalmode>
-              0
-            </decimalmode>
-            <indexed>
-              1
-            </indexed>
-            <kind>
-              BytesBandwidth
-            </kind>
-            <limitmaxerror>
-              <cell col="1">
-                8E-6
-              </cell>
-            </limitmaxerror>
-            <limitmaxwarning>
-              <cell col="1">
-                8E-6
-              </cell>
-            </limitmaxwarning>
-            <limitminerror>
-              <cell col="1">
-                8E-6
-              </cell>
-            </limitminerror>
-            <limitminwarning>
-              <cell col="1">
-                8E-6
-              </cell>
-            </limitminwarning>
-            <limitmode>
-              0
-            </limitmode>
-            <linewidth>
-              1
-            </linewidth>
-            <mode>
-              Difference
-            </mode>
-            <name>
-              Traffic Total
-            </name>
-            <namereadonly>
-              0
-            </namereadonly>
-            <nostack>
-              0
-            </nostack>
-            <percent>
-              0
-            </percent>
-            <ref100percent>
-              <cell col="0">
-                25000000
-              </cell>
-              <cell col="1">
-                8E-6
-              </cell>
-            </ref100percent>
-            <show>
-              1
-            </show>
-            <showchart>
-              1
-            </showchart>
-            <speedsize>
-              MegaBit
-            </speedsize>
-            <speedtime>
-              Second
-            </speedtime>
-            <spikemax>
-              <cell col="1">
-                8E-6
-              </cell>
-            </spikemax>
-            <spikemin>
-              <cell col="1">
-                8E-6
-              </cell>
-            </spikemin>
-            <spikemode>
-              0
-            </spikemode>
-            <volumesize>
-              MegaByte
-            </volumesize>
-          </data>
-        </sumchannel>
-        <downchannel id="-4">
-          <data>
-            <axismode>
-              0
-            </axismode>
-            <colmode>
-              0
-            </colmode>
-            <decimaldigits>
-              2
-            </decimaldigits>
-            <decimalmode>
-              0
-            </decimalmode>
-            <kind>
-              Percent
-            </kind>
-            <limitmode>
-              0
-            </limitmode>
-            <linewidth>
-              1
-            </linewidth>
-            <mode>
-              Absolute
-            </mode>
-            <name>
-              Downtime
-            </name>
-            <namereadonly>
-              0
-            </namereadonly>
-            <nostack>
-              0
-            </nostack>
-            <percent>
-              0
-            </percent>
-            <show>
-              1
-            </show>
-            <showchart>
-              1
-            </showchart>
-            <speedsize>
-              None
-            </speedsize>
-            <speedtime>
-              None
-            </speedtime>
-            <spikemode>
-              0
-            </spikemode>
-            <volumesize>
-              None
-            </volumesize>
-          </data>
-        </downchannel>
-        <list>
-          <channel sum="1" id="0">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <indexed>
-                1
-              </indexed>
-              <kind>
-                BytesBandwidth
-              </kind>
-              <limiterrormsg>
-              </limiterrormsg>
-              <limitmaxerror>
-                <cell col="0">
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                0
-              </limitmode>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Traffic In
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="0">
-                  12500000
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                MegaBit
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                MegaByte
-              </volumesize>
-            </data>
-          </channel>
-          <channel sum="1" id="1">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <indexed>
-                1
-              </indexed>
-              <kind>
-                BytesBandwidth
-              </kind>
-              <limiterrormsg>
-              </limiterrormsg>
-              <limitmaxerror>
-                <cell col="0">
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                0
-              </limitmode>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Traffic Out
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="0">
-                  12500000
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                MegaBit
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  8E-6
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                MegaByte
-              </volumesize>
-            </data>
-          </channel>
-          <channel id="10">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  1
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  1
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <kind>
-                Count
-              </kind>
-              <limiterrormsg>
-              </limiterrormsg>
-              <limitmaxerror>
-                <cell col="0">
-                  0
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                1
-              </limitmode>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Errors in
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="1">
-                  1
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                None
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                None
-              </volumesize>
-            </data>
-          </channel>
-          <channel id="11">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  1
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  1
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <kind>
-                Count
-              </kind>
-              <limiterrormsg>
-              </limiterrormsg>
-              <limitmaxerror>
-                <cell col="0">
-                  0
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                1
-              </limitmode>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Errors out
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="1">
-                  1
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                None
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                None
-              </volumesize>
-            </data>
-          </channel>
-          <channel id="12">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  1
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  1
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <kind>
-                Count
-              </kind>
-              <limitmaxerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="0">
-                  0
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                1
-              </limitmode>
-              <limitwarningmsg>
-              </limitwarningmsg>
-              <linewidth>
-                1
-              </linewidth>
-              <mode>
-                Difference
-              </mode>
-              <name>
-                Discards in
-              </name>
-              <namereadonly>
-                0
-              </namereadonly>
-              <nostack>
-                0
-              </nostack>
-              <percent>
-                0
-              </percent>
-              <ref100percent>
-                <cell col="1">
-                  1
-                </cell>
-              </ref100percent>
-              <show>
-                1
-              </show>
-              <showchart>
-                1
-              </showchart>
-              <speedsize>
-                None
-              </speedsize>
-              <speedtime>
-                Second
-              </speedtime>
-              <spikemax>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemax>
-              <spikemin>
-                <cell col="1">
-                  1
-                </cell>
-              </spikemin>
-              <spikemode>
-                0
-              </spikemode>
-              <volumesize>
-                None
-              </volumesize>
-            </data>
-          </channel>
-          <channel id="13">
-            <data>
-              <avgmode>
-                0
-              </avgmode>
-              <axismax>
-                <cell col="1">
-                  1
-                </cell>
-              </axismax>
-              <axismin>
-                <cell col="1">
-                  1
-                </cell>
-              </axismin>
-              <axismode>
-                0
-              </axismode>
-              <colmode>
-                0
-              </colmode>
-              <decimaldigits>
-                2
-              </decimaldigits>
-              <decimalmode>
-                0
-              </decimalmode>
-              <kind>
-                Count
-              </kind>
-              <limitmaxerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitmaxerror>
-              <limitmaxwarning>
-                <cell col="0">
-                  0
-                </cell>
-              </limitmaxwarning>
-              <limitminerror>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminerror>
-              <limitminwarning>
-                <cell col="1">
-                  1
-                </cell>
-              </limitminwarning>
-              <limitmode>
-                1
               </limitmode>
               <limitwarningmsg>
                 
